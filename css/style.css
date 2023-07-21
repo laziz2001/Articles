@@ -34,7 +34,8 @@ body {
 
 /* BLOG-HERO  */
 .hero {
-    width: 600px;
+    width: 100%;
+    max-width: 600px;
     height: 782px;
     display: flex;
     justify-content: center;
@@ -42,7 +43,7 @@ body {
     background-image: url(../img/Nature.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
+    background-position: center bottom;
 }
 
 @media
@@ -53,11 +54,13 @@ only screen and (        min-device-pixel-ratio: 2),
 only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
     .hero {
-        background-image: url(../img/Nature.jpg);
+        background-image: url(../img/Nature@2x.jpg);
     }
 }
 
 .hero-information {
+    width: 285px;
+    height: 58px;
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -65,8 +68,6 @@ only screen and (                min-resolution: 2dppx) {
 
 
 .hero-information-heading {
-    width: 285px;
-    height: 58px;
     font-size: 24px;
     font-weight: 200;
     margin-bottom: 24px;
@@ -101,6 +102,10 @@ only screen and (                min-resolution: 2dppx) {
     background-size: contain;
     background-position: center center;
     content: "";
+}
+
+.hero-information-link-inner {
+    display: inline-block;
 }
 
 .hero-information-link-text {
