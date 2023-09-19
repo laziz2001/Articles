@@ -12,13 +12,15 @@
 
 
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="css/necolas.github.io_normalize.css_8.0.1_normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/necolas.github.io_normalize.css_8.0.1_normalize.css"> -->
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
     <div class="blog">
         <div class="blog-container container">
-            <div class="hero">
+            <!-- HERO SECTION -->
+            <section class="hero">
                 <div class="hero-information">
                     <h2 class="hero-information-heading">Sayohat haqida eng qiziq <br> bloglarni kuzatib boring.</h2>
                     <a class="hero-information-link" href="#">
@@ -27,19 +29,22 @@
                         </span>
                     </a>
                 </div>
-            </div>
+            </section>
 
-            <div class="main">
+            <!-- MAIN SECTION -->
+            <section class="main">
                 <h2 class="main-heading">Eng so'nggi videolar</h2>
                 <hr class="main-line">
                 <div class="impression-blog">
                     <div class="impression">
                         <img class="impression-img" src="img/tnet.jpg" alt="impression img" width="160" height="90" srcset="img/tent.jpg 1x, img/tent@2x.jpg 2x">
                         <div class="impression-content">
-                            <a class="impression-content-heading" href="#">O'rmonda uchburchaksimon uy qurdik</a>
-                            <div class="location">
-                                <div class="posted-time">1 hafta oldin</div>
-                                <div class="view">873 ming</div>
+                            <h3 class="impression-content-heading">
+                                <a class="impression-content-heading-link" href="#">O'rmonda uchburchaksimon uy qurdik</a>
+                            </h3>
+                            <div class="impression-location">
+                                <time class="impression-location-item impression-location-posted-time" datetime="2021-09-23">1 hafta oldin</time>
+                                <div class="impression-location-item impression-location-view">873 ming</div>
                             </div>
                         </div>
                     </div>
@@ -47,10 +52,12 @@
                     <div class="impression">
                         <img class="impression-img" src="img/lake.jpg" alt="impression img" width="160" height="90" srcset="img/lake.jpg 1x, img/lake@2x.jpg 2x">
                         <div class="impression-content">
-                            <a class="impression-content-heading" href="#">Sibirliklarning qoldirib ketilgan uychalari</a>
-                            <div class="location">
-                                <div class="posted-time">3 hafta oldin</div>
-                                <div class="view">819 ming</div>
+                            <h3 class="impression-content-heading">
+                                <a class="impression-content-heading-link" href="#">Sibirliklarning qoldirib ketilgan uychalari</a>
+                            </h3>
+                            <div class="impression-location">
+                                <time class="impression-location-item impression-location-posted-time" datetime="2021-09-23">3 hafta oldin</time>
+                                <div class="impression-location-item impression-location-view">819 ming</div>
                             </div>
                         </div>
                     </div>
@@ -58,10 +65,12 @@
                     <div class="impression">
                         <img class="impression-img" src="img/travel.jpg" alt="impression img" width="160" height="90" srcset="img/travel.jpg 1x, img/travel@2x.jpg 2x">
                         <div class="impression-content">
-                            <a class="impression-content-heading" href="#">Yer-uyida mallarang kuchugim bilan tunab qoldik</a>
-                            <div class="location">
-                                <div class="posted-time">1 oy oldin</div>
-                                <div class="view">3.9 million</div>
+                            <h3 class="impression-content-heading">
+                                <a class="impression-content-heading-link" href="#">Yer-uyida mallarang kuchugim bilan tunab qoldik</a>
+                            </h3>
+                            <div class="impression-location">
+                                <time class="impression-location-item impression-location-posted-time" datetime="2021-08-26">1 oy oldin</time>
+                                <div class="impression-location-item impression-location-view">3.9 million</div>
                             </div>
                         </div>
                     </div>
@@ -69,7 +78,7 @@
                 <div class="dowload">
                     <button class="main-link" type="button">Yana yuklash</button>
                 </div>
-            </div>
+            </section>
         </div>
     </div>
 </body>
