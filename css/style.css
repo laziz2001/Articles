@@ -1,3 +1,13 @@
+:root {
+    --accent-color: #fff;
+    --outline-color: #1e90ff;
+    --heading-color: #000;;
+
+    --text-font: "Roboto Condensed", "Arial", sans-serif;
+    --heading-font: "Bebas Neue","Roboto Condensed", "Arial", sans-serif;
+}
+
+
 html {
     margin: 0;
     padding: 0;
@@ -14,13 +24,13 @@ body {
     display: flex;
     flex-direction: column;
     height: 100%;
-    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-family: var(--text-font);
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     letter-spacing: 2px;
-    color: #222;
+    color: ;
 }
 
 .container {
@@ -38,7 +48,7 @@ img {
 }
 
 *:focus {
-    outline: 2px dashed #1e90ff;
+    outline: 2px dashed var(--outline-color);
     outline-offset: 2px;
 }
 
@@ -89,18 +99,18 @@ only screen and (                min-resolution: 2dppx) {
 .hero-information-heading {
     font-size: 24px;
     font-weight: 400;
-    font-family: "Bebas Neue", "Roboto Condensed", "Arial", sans-serif;
+    font-family: var(--heading-font);
     margin-top: 0;
     margin-bottom: 24px;
     text-transform: uppercase;
-    color: #fff;
+    color: var(--accent-color);
 }
 
 .hero-information-link {
     display: flex;
     align-items: center;
     font-size: 16px;
-    font-family: "Bebas Neue", "Roboto Condensed", "Arial", sans-serif;
+    font-family: var(--heading-font);
     padding: 12px 24px;
     line-height: 1.5;
     text-decoration: none;
@@ -137,7 +147,7 @@ only screen and (                min-resolution: 2dppx) {
     line-height: 24px;
     letter-spacing: 2px;
     text-transform: uppercase;
-    color: #fff;
+    color: var(--accent-color);
 }
 
 
@@ -147,18 +157,17 @@ only screen and (                min-resolution: 2dppx) {
     max-width: 600px;
     height: 782px;
     padding: 54px 54px 298px 54px;
-    background-color: #fff;
+    background-color: var(--accent-color);
 }
 
 .main-heading {
     margin-top: 0;
     margin-bottom: 24px;
     font-size: 24px;
-    font-family: "Bebas Neue", "Roboto Condensed", "Arial", sans-serif;
+    font-family: var(--heading-font);
     font-weight: 400;
     text-transform: uppercase;
-    background-color: #fff;
-    color: #000;
+    color: var(--heading-color);
 }
 
 .main-line {
@@ -196,14 +205,14 @@ only screen and (                min-resolution: 2dppx) {
 .impression-content-heading {
     margin-top: 0;
     margin-bottom: 4px;
-    font-family: "Bebas Neue", "Roboto Condensed", "Arial", sans-serif;
+    font-family: var(--heading-font);
     font-weight: 400;
     font-size: 18px;
 }
 
 .impression-content-heading-link {
     text-decoration: none;
-    color: #000;
+    color: var(--heading-color);
 }
 
 .impression-content-heading-link:hover {
@@ -228,7 +237,7 @@ only screen and (                min-resolution: 2dppx) {
 
 .impression-location-item {
     display: flex;
-    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-family: var(--text-font);
 }
 
 .impression-location-item::before {
@@ -255,7 +264,7 @@ only screen and (                min-resolution: 2dppx) {
     display: block;
     width: 100%;
     font-size: 14px;
-    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-family: var(--text-font);
     font-weight: 700;
     padding: 12px;
     text-decoration: none;
@@ -263,7 +272,7 @@ only screen and (                min-resolution: 2dppx) {
     border-radius: 4px;
     line-height: normal;
     background-color: #1e90ff;
-    color: #fff;
+    color: var(--accent-color);
     cursor: pointer;
 }
 
